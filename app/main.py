@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(
+    title="fastAPI components",
+    description="Adding fastAPI components to make meaningful app",
+)
 
 @app.get("/")
 async def root():
